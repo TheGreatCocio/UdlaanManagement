@@ -5,9 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
     @Styles.Render("~/Content/css")
+    @Styles.Render("~/Styles/Home.min.css")
     @Scripts.Render("~/bundles/modernizr")
+    <script src="~/Scripts/angular.min.js"></script>
+    <script src="~/AngularJS/Ng.Module.js"></script>
+    <script src="~/AngularJS/Ng.Ctrl.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
+<body ng-app="Test">
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -16,13 +21,14 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.Label("Udlån Management", new { @class = "navbar-brand" })
+                @*@Html.ActionLink("Udlån Management", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })*@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Brugere", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Produkter", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Nye Produkter", "About", "Home")</li>
                 </ul>
             </div>
         </div>
@@ -31,7 +37,15 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p class="copyright">© Created By Mark Fog & Mikkel Rasmussen</p>
+            <div class="socialMediaDisplay">
+                <ul>
+                    <li>
+                        <a class="facebook" href="https://www.facebook.com/"></a>
+                        <a class="linkedin" href="https://www.linkedin.com/"></a>
+                    </li>
+                </ul>
+            </div>
         </footer>
     </div>
 

@@ -1,0 +1,224 @@
+﻿body {
+    .udlaan-headline {
+        font-family: fantasy;
+        text-align: center;
+        font-size: 45px;
+    }
+
+    .input-mifare {
+        display: inline-block;
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+
+    .navbar-header {
+        .navbar-brand {
+            width: 240px;
+            font-family: 'FontAwesome', 'Helvetica';
+        }
+    }
+
+    .body-content {
+        .page-title {
+            text-align: center;
+            font-family: 'FontAwesome', 'Helvetica';
+            font-weight: 600;
+        }
+    }
+}
+
+footer {
+    .copyright {
+        float: left;
+    }
+
+    .socialMediaDisplay {
+        display: inline-block;
+        float: right;
+        padding: 0px 0px 2px 0px;
+        list-style: none;
+        margin: 0px;
+        /*@include Media(xs) {
+            float: left;
+        }*/
+        li {
+            display: inline-block;
+
+            a {
+                font-family: 'FontAwesome', 'Helvetica';
+                display: inline-block;
+                position: relative;
+                -webkit-perspective: 800px;
+                perspective: 800px;
+                overflow: visible;
+                height: 30px;
+                width: 30px;
+                text-indent: -9999px;
+                margin-top: 2px;
+
+                &.facebook {
+                    &::before, &::after {
+                        content: '\f09a';
+                    }
+
+                    &::after {
+                        background-color: #44619D;
+                    }
+                }
+
+                &.twitter {
+                    &::before, &::after {
+                        content: '\f099';
+                    }
+
+                    &::after {
+                        background-color: #1DA1F2;
+                    }
+                }
+
+                &.linkedin {
+                    &::before, &::after {
+                        content: '\f0e1';
+                    }
+
+                    &::after {
+                        background-color: #0077B5;
+                    }
+                }
+
+                &.instagram {
+                    &::before, &::after {
+                        content: '\f16d';
+                    }
+
+                    &::after {
+                        background-color: #125688;
+                    }
+                }
+
+                &.pinterest-p {
+                    &::before, &::after {
+                        content: '\f231';
+                    }
+
+                    &::after {
+                        background-color: #C21221;
+                    }
+                }
+
+                &.tumblr {
+                    &::before, &::after {
+                        content: '\f173';
+                    }
+
+                    &::after {
+                        background-color: #33465D;
+                    }
+                }
+
+                &.vine {
+                    &::before, &::after {
+                        content: '\f1ca';
+                    }
+
+                    &::after {
+                        background-color: #00BF8F;
+                    }
+                }
+
+                &.google-plus {
+                    &::before, &::after {
+                        content: '\f0d5';
+                    }
+
+                    &::after {
+                        background-color: #DB4437;
+                    }
+                }
+
+                &.vk {
+                    &::before, &::after {
+                        content: '\f189';
+                    }
+
+                    &::after {
+                        background-color: #54769A;
+                    }
+                }
+
+                &.flickr {
+                    &::before, &::after {
+                        content: '\f16e';
+                    }
+
+                    &::after {
+                        background-color: #FF0081;
+                    }
+                }
+
+                &.xing {
+                    &::before, &::after {
+                        content: '\f168';
+                    }
+
+                    &::after {
+                        background-color: #CFDC00;
+                    }
+                }
+
+                &.renren {
+                    &::before, &::after {
+                        content: '\f18b';
+                    }
+
+                    &::after {
+                        background-color: #0259A0;
+                    }
+                }
+
+                &::before, &::after {
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 30px;
+                    font-size: 20px;
+                    text-align: center;
+                    -webkit-transition: all 0.4s;
+                    transition: all 0.4s;
+                    text-indent: 0px;
+                    height: 30px;
+                    padding: 7px 0px;
+                }
+
+                &::before {
+                    z-index: 2;
+                }
+
+                &::after {
+                    z-index: 1;
+                    opacity: 0;
+                    -webkit-transform: translateY(19px) rotateX(-90deg);
+                    transform: translateY(19px) rotateX(-90deg);
+                    color: #fff;
+                }
+
+                &:hover {
+                    text-decoration: none;
+
+                    &::before {
+                        opacity: 0;
+                        -webkit-transform: translateY(-19px) rotateX(90deg);
+                        transform: translateY(-19px) rotateX(90deg);
+                    }
+
+                    &::after {
+                        opacity: 1;
+                        -webkit-transform: rotateX(0);
+                        transform: rotateX(0);
+                    }
+                }
+            }
+        }
+    }
+}
